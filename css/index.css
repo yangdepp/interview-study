@@ -1,14 +1,41 @@
-body{
+html,body{
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
-
-
+.head, .foot{
+  height: 100px;
+  line-height: 100px;
+  background-color: #000;
+  color: #fff;
+}
+.side{
+  background-color: antiquewhite;
+}
+.main{
+  background-color: #000;
+  color: #fff;
+}
+body{
+  display: flex;
+  flex-flow: column;
+}
 .body{
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex: 1
+}
+.side{
+  width: 200px;
+}
+.main{
+  flex-grow: 1;
+}
+.main{
+  margin-left: 10px;
+}
+.body{
   width: 1200px;
-  height: 2000px;
-  background-color: #ccc;
-  margin: 0 auto;
+  align-self: center;
 }
